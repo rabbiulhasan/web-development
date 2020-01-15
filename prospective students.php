@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>
+		Prospective Of Students
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="header" id="myHeader">
+      <div class="row">
+        <div  align="middle" style="color:chocolate; background-color: #353b48; height: 100px; width:1500px;">
+          
+          <p><h1>Prospectus Of Students </h1></p>
+        </div>
+       </div>
+    </div>
+
+
+
+  <script>
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+  </script>
+
+
+
+
+
+  <div class="row">
+      <div class="column left">
+        
+      </div>
+
+      <div class="column middle2">
+        
+      </div>
+      <div class="column right">
+        <div class="search-container">
+        
+          <form method="get" action="/action_page.php" >
+                  <span>Search</span>
+                  <input type="text" value="" name="s" id="s"   placeholder="Enter your search" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+  </div>
+
+
+  <h2>Computer Science and Engineering</h2>
+      <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.
+      Computer Science engineering has roots in electrical engineering, mathematics, and linguistics.</p><br><br>
+
+  <h2>Why Choose CSE?</h2></a>
+      <p>
+      CSE offers a unique opportunity compared to other engineering disciplines. It is a field of study specifically dedicated to improving human lives through advancing engineering application in softwares and hardwares. Students with a desire to be make life easier by using the science and technology.</p> <br><br>
+  <h2>Prospects of CSE</h2>
+      <p>To become a Center of Excellence in the field of Computer Science and Engineering with a strong research and teaching environment that adapts swiftly to the challenges of the computer technology evolution.</p>
+
+
+</body>
+</html>

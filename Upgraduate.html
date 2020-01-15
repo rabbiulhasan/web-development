@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>CGPA claculator</title>
+  </head>
+  <body
+    style="background-color: #4CAF50"> <h3 align="center"> CALCULATOR</h3>
+  <div align="center" style="margin-top: 100px">
+    <p>1st subject:  <br> </p>
+    <span>
+      <input type="text" id="1stCredit" placeholder="Credit">
+      <input type="text" id="1stGpa"  placeholder="GPA">
+    </span>
+    <p>2nd subject:  <br> </p>
+    <span>
+      <input type="text" id="2ndCredit" placeholder="Credit">
+      <input type="text" id="2ndaGpa" placeholder="GPA">
+    </span>
+    <p>3rd subject: <br> </p>
+    <span>
+      <input type="text" id="3rdCredit" placeholder="Credit">
+      <input type="text" id="3rdGpa"  placeholder="GPA">
+    </span>
+    <br>
+    <button type="button" id="button" onclick="calculateCGPA();">Calculate</button>
+    <p id="result"></p>
+</div>
+
+
+    <script type="text/javascript">
+
+      function calculateCGPA() {
+        var credit=[];
+        var gpa=[];
+
+        
+        credit[1] = document.getElementById('1stCredit').value;
+        credit[2] = document.getElementById('2ndCredit').value;
+        credit[3] = document.getElementById('3rdCredit').value;
+
+        gpa[1]=document.getElementById('1stGpa').value;
+        gpa[2]=document.getElementById('2ndGpa').value;
+        gpa[3]=document.getElementById('3rdGpa').value;
+
+
+        var total=0
+        var mul=0;
+
+        for (var i = 0; i < 2; i++) {
+          total+=credit[i];
+          mul+=(credit[i]*gpa[i]);
+        }
+        var cgpaa = mul/total;
+        alert(mul+ "  "+total);
+        alert(cgpaa);
+      }
+
+
+
+    </script>
+  </body>
+</html>
